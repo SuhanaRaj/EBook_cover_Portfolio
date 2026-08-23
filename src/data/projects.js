@@ -77,4 +77,5 @@ export const projects = [
       'A tall, confident slab-style display face fills the left column with authority, paired with a restrained serif subtitle and a thin gold rule that separates title from tagline.',
     mood: 'Rich black and antique gold, warmed by soft amber light',
   },
+  
 ]
