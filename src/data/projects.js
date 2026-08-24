@@ -3,6 +3,7 @@ import theSummerWeNeverHad from '../assets/covers/the-summer-we-never-had.png'
 import theHouseAtMidnight from '../assets/covers/the-house-at-midnight.png'
 import buildWithoutBurnout from '../assets/covers/build-without-burnout.png'
 import theWealthHabit from '../assets/covers/the-wealth-habit.png'
+import theHiddenHindu from '../assets/covers/the-hidden-hindu.jpeg'
 
 // These are self-directed portfolio / sample projects designed by Suhana Raj
 // to demonstrate range across genres — not commissioned client work.
@@ -77,5 +78,28 @@ export const projects = [
       'A tall, confident slab-style display face fills the left column with authority, paired with a restrained serif subtitle and a thin gold rule that separates title from tagline.',
     mood: 'Rich black and antique gold, warmed by soft amber light',
   },
+
+  {
+  id: 'the-hidden-hindu',
+  title: 'The Hidden Hindu',
+  genre: 'Mythology / Cultural Nonfiction',
+  theme: 'Ancient beliefs, mythology, spirituality, forgotten traditions',
+
+  cover: theHiddenHindu,
+
+  description:
+    'A dark, atmospheric conceptual cover exploring the idea of forgotten beliefs and ancient Hindu traditions. The composition brings together sacred symbolism, mythology, mountains, and an aged architectural structure to create a sense of mystery and discovery.',
+
+  approach:
+    'The cover uses a weathered ochre-gold background as the foundation, layered with a powerful sacred symbol and flowing linework. A temple, Himalayan landscape, and mythological figure create multiple visual layers, suggesting that the reader is uncovering something ancient hidden beneath the surface. The deep blacks and muted earthy tones are contrasted with a bold red title to create a striking focal point.',
+
+  typography:
+    'A distressed display typeface is used for the supporting lines to reinforce the ancient and mysterious character of the concept, while the large red sans-serif title provides a contemporary visual anchor. The contrast between the weathered lettering and clean title creates a tension between the ancient and the modern.',
+
+  mood:
+    'Ancient, mysterious, spiritual, and cinematic — ochre gold, deep black, muted stone, and crimson red',
+
+},
+  
   
 ]
