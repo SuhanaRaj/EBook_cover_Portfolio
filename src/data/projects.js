@@ -3,7 +3,7 @@ import theSummerWeNeverHad from '../assets/covers/the-summer-we-never-had.png'
 import theHouseAtMidnight from '../assets/covers/the-house-at-midnight.png'
 import buildWithoutBurnout from '../assets/covers/build-without-burnout.png'
 import theWealthHabit from '../assets/covers/the-wealth-habit.png'
-import theHiddenHindu from '../assets/covers/the-hidden-hindu.jpeg'
+import theHiddenHindu from '../assets/covers/the-hidden-hindu.png'
 
 // These are self-directed portfolio / sample projects designed by Suhana Raj
 // to demonstrate range across genres — not commissioned client work.
@@ -78,7 +78,6 @@ export const projects = [
       'A tall, confident slab-style display face fills the left column with authority, paired with a restrained serif subtitle and a thin gold rule that separates title from tagline.',
     mood: 'Rich black and antique gold, warmed by soft amber light',
   },
-
   {
   id: 'the-hidden-hindu',
   title: 'The Hidden Hindu',
@@ -100,6 +99,4 @@ export const projects = [
     'Ancient, mysterious, spiritual, and cinematic — ochre gold, deep black, muted stone, and crimson red',
 
 },
-  
-  
 ]
