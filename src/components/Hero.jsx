@@ -1,6 +1,7 @@
 import { projects } from '../data/projects'
+import femaleDesign from '../assets/covers/female_design.png'
 
-const heroCover = projects.find((p) => p.id === 'the-wealth-habit')
+// const heroCover = projects.find((p) => p.id === 'the-wealth-habit')
 
 export default function Hero() {
   return (
@@ -29,8 +30,8 @@ export default function Hero() {
           <div className="hero__shelf" aria-hidden="true" />
           <figure className="hero__cover">
             <img
-              src={heroCover.cover}
-              alt={`${heroCover.title} — book cover design by Suhana Raj`}
+              src={femaleDesign}
+              alt="Book cover design by Suhana Raj"
               width="1023"
               height="1537"
             />
