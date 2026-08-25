@@ -4,6 +4,7 @@ import theHouseAtMidnight from '../assets/covers/the-house-at-midnight.png'
 import buildWithoutBurnout from '../assets/covers/build-without-burnout.png'
 import theWealthHabit from '../assets/covers/the-wealth-habit.png'
 import theHiddenHindu from '../assets/covers/the-hidden-hindu.png'
+import whatIfWeAsked from '../assets/covers/What-if-we-asked.png'
 
 // These are self-directed portfolio / sample projects designed by Suhana Raj
 // to demonstrate range across genres — not commissioned client work.
@@ -97,6 +98,27 @@ export const projects = [
 
   mood:
     'Ancient, mysterious, spiritual, and cinematic — ochre gold, deep black, muted stone, and crimson red',
+
+},
+{
+  id: 'what-if-we-asked',
+  title: 'What If We Asked?',
+  genre: 'Social Commentary / Indian Non-Fiction',
+  theme: 'Society, corruption, inequality, questioning the system',
+
+  cover: whatIfWeAsked,
+
+  description:
+    'A bold editorial-style cover built around a simple but powerful idea — the courage to question what everyone else has learned to accept. A lone figure raising a hand becomes the visual focal point, surrounded by shadowy scenes representing corruption, unfair approvals, compromised education, and everyday systemic problems.',
+
+  approach:
+    'The composition uses torn-paper textures, deep blacks, muted greys, and restrained warm highlights to create a serious, investigative atmosphere. The lower collage represents the systems and people being questioned, while the isolated figure above them creates a strong visual contrast between silence and dissent.',
+
+  typography:
+    'A large high-contrast serif dominates the title, giving it the feel of an editorial investigation or social commentary book. The handwritten treatment of “we” introduces a more personal, human voice, while the spaced-out subtitle reinforces the central message that meaningful change begins with asking difficult questions.',
+
+  mood:
+    'Gritty charcoal, warm amber highlights, stark black, and muted paper tones',
 
 },
 ]
