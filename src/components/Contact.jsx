@@ -27,12 +27,46 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // No backend is connected yet — this only confirms the form works.
-    // Wire this up to an email service or API route before going live.
-    setSubmitted(true)
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   // No backend is connected yet — this only confirms the form works.
+  //   // Wire this up to an email service or API route before going live.
+  //   setSubmitted(true)
+  // }
+
+  const handleSubmit = async (e) => {
+  e.preventDefault()
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+        name: form.name,
+        email: form.email,
+        bookTitle: form.bookTitle,
+        genre: form.genre,
+        projectType: form.projectType,
+        message: form.message,
+      }),
+    })
+
+    const result = await response.json()
+
+    if (result.success) {
+      setSubmitted(true)
+    } else {
+      alert('Something went wrong. Please try again.')
+    }
+  } catch (error) {
+    console.error(error)
+    alert('Unable to send your message. Please try again.')
   }
+}
 
   return (
     <section id="contact" className="contact">
@@ -51,9 +85,7 @@ export default function Contact() {
             <div className="contact__success" role="status">
               <h3>Thanks, {form.name.split(' ')[0] || 'there'}.</h3>
               <p>
-                Your project details are ready to send. This form isn&rsquo;t
-                connected to a live inbox yet — once it&rsquo;s wired up to an
-                email service, messages sent here will reach me directly.
+                Your project details have been sent successfully. I'll review your message and get back to you soon.
               </p>
               <button
                 type="button"
