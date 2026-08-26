@@ -57,14 +57,17 @@ export default function Contact() {
 
     const result = await response.json()
 
+    console.log('Web3Forms response:', result)
+    console.log('HTTP status:', response.status)
+
     if (result.success) {
       setSubmitted(true)
     } else {
-      alert('Something went wrong. Please try again.')
+      alert(`Web3Forms error: ${result.message}`)
     }
   } catch (error) {
-    console.error(error)
-    alert('Unable to send your message. Please try again.')
+    console.error('Form error:', error)
+    alert(`Connection error: ${error.message}`)
   }
 }
 
